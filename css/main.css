@@ -20,7 +20,7 @@ body {
 }
 
 .overlay {
-	background: rgba(17,117,192,0.7 );
+	background: rgba(17,117,192,0.8 );
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -43,12 +43,13 @@ body {
 }
 
 .header-container h1 {
-	font-family: 'Oswald', 'sans-serif';
+	font-family: 'PT Sans', sans-serif;
+	letter-spacing: -0.03em;
 	font-weight: 300;
-	font-size: 5.7em;
+	font-size: 6.6em;
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 135px;
+	margin-top: 130px;
 	text-shadow: 1px 1px 3px #083452;
 }
 
@@ -56,23 +57,33 @@ body {
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
 	text-align: center;
-	margin: -15px;
+	margin: -22px;
 	color: #083452;
 }
 
 .logo {
-	font-family: 'Oswald', 'sans-serif';
-	font-weight: 300;
-	font-size: 1em;
+	position: relative;
+	top: 10px;
+}
+
+.name {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 1.05em;
 	display: inline-block;
 	color: #083452;
-	margin-left: 20px;
+	margin-left: 10px;
+	margin-top: 20px;
+	position: relative;
+	top: -10px;
 }
 
 .header-container ul {
 	margin: 0;
 	display: inline-block;
-	padding-left: 660px;
+	padding-left: 560px;
+	position: relative;
+	top: -10px;
 }
 
 .header-container li {
@@ -82,8 +93,16 @@ body {
 	font-weight: 400;
 	font-size: 1.1em;
 	margin: 0 auto;
-	padding-right: 20px;
+	padding-right: 15px;
 	color: #083452;
+}
+
+.header-container a:hover {
+	color: white;
+}
+
+.search img {
+	margin-left: -15px;
 }
 
 /* Body */
@@ -113,26 +132,38 @@ body {
 	color: #242F48;
 }
 
+.small-profile {
+	background-image: url(../images/round-pic-small.png);
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: relative;
+	margin-left: 43px;
+	top: 8px;
+}
+
 .contributor {
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
 	font-size: .8em;
 	color: #106db3;
 	display: inline-block;
-	padding: 0 0 0 45px;
+	padding: 0 0 0 5px;
+	margin-top: 10px;
 }
 
 .date {
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
 	font-size: .8em;
-	color: #5e686f;
+	color: #a3b3bf;
 	display: inline-block;
-	padding: 0 0 0 40px;
+	padding: 0 0 0 15px;
+	margin-top: 10px;
 }
 
 .date a {
-	color: #5e686f;
+	color: #a3b3bf;
 }
 
 .date a:hover {
@@ -170,14 +201,15 @@ body {
 	color: #a3b3bf;
 }
 
-.main h3 {
+blockquote {
 	display: inline-block;
-	margin: 0 0 0 0;
-	padding: 0 0 0 10px;
+	margin: 2px 0 2px 40px;
+	padding: 10px 0 10px 20px;
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
 	font-size: 2em;
 	color: #106db3;
+	border-left: 2px solid #a3b3bf;
 }
 
 /* Right Column */
@@ -201,18 +233,66 @@ body {
 .contributor-right {
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	color: #106db3;
-	margin: 0 10px 0 0;
-	padding: 5px 0 0 85px;
+	margin: 0 auto;
+	padding: 5px 0 0 92px;
 }
 
-.author p {
+.social-links {
+	list-style: none;
+	margin: 0 auto;
+	font-family: 'Asap', 'sans-serif';
+	font-weight: 400;
+	font-size: .8em;
+	color: #a3b3bf;
+	padding-left: 43px;
+	position: relative;
+}
 
+.social-links li {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	padding-left: 10px;
+}
+
+.social-links a {
+	text-decoration: none;
+	color: #a3b3bf;
+}
+
+.social-links a:hover {
+	color: #106db3;
+}
+
+.paddle-overlay {
+	background: rgba(17,117,192,0.5 );
+	position: absolute;
+	width: 250px;
+	height: 300px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 28px;
 }
 
 .paddle {
 	padding-left: 28px;
+	position: relative;
+}
+
+.side-copy a {
+	font-family: 'Asap', 'sans-serif';
+	font-weight: 400;
+	font-size: .9em;
+	color: #a3b3bf;
+	float: right;
+	padding: 5px 40px 0 0;
+}
+
+.side-copy a:hover {
+	color: #106db3;
 }
 
 .side-copy h5 {
@@ -262,7 +342,7 @@ hr {
 	float: left;
 }
 
-.foot-container {
+.foot-text {
 	height: 300px;
 	width: 25%;
 	position: absolute;
@@ -272,17 +352,19 @@ hr {
 	display: inline-block;
 }
 
-.foot-container h4 {
+.foot-text h4 {
 	font-family: 'Oswald', 'sans-serif';
 	font-weight: 400;
 	font-size: 2em;
 	color: #242F48;
 	margin: 0;
 	padding: 10px 15px 0 15px;
-	opacity: 0.7;
+	opacity: 0.8;
+	position: absolute;
+	bottom: 20px;
 }
 
-.footer-images {
+.footer-container {
 	height: 300px;
 	width: 100%;
 	position: relative;
