@@ -15,7 +15,7 @@ body {
 .header {
 	height: 523px;
 	width: 100%;
-	background-image: url('../images/waves.jpg');
+	background-image: url('images/waves.jpg');
 	position: relative;
 }
 
@@ -133,7 +133,7 @@ body {
 }
 
 .small-profile {
-	background-image: url(../images/round-pic-small.png);
+	background-image: url(images/round-pic-small.png);
 	display: inline-block;
 	width: 24px;
 	height: 24px;
