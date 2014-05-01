@@ -109,7 +109,7 @@ body {
 
 .main {
 	height: 1007px;
-	width: 1000px;
+	width: 1056px;
 	margin: 0 auto;
 }
 
@@ -117,7 +117,7 @@ body {
 
 .left {
 	display: inline-block;
-	width: 678px;
+	width: 704px;
 	height: 1007px;
 }
 
@@ -203,11 +203,11 @@ body {
 
 blockquote {
 	display: inline-block;
-	margin: 2px 0 2px 40px;
-	padding: 10px 0 10px 20px;
+	margin: 8px 0 8px 40px;
+	padding: 10px 0 10px 18px;
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
-	font-size: 2em;
+	font-size: 1.75em;
 	color: #106db3;
 	border-left: 2px solid #a3b3bf;
 }
@@ -216,7 +216,7 @@ blockquote {
 
 .right {
 	display: inline-block;
-	width: 318px;
+	width: 348px;
 	height: 1007px;
 	float: right;
 }
@@ -227,7 +227,7 @@ blockquote {
 }
 
 .author img {
-	margin: 84px 0 0 100px;
+	margin: 84px 0 0 120px;
 }
 
 .contributor-right {
@@ -236,7 +236,7 @@ blockquote {
 	font-size: 1.1em;
 	color: #106db3;
 	margin: 0 auto;
-	padding: 5px 0 0 92px;
+	padding: 5px 0 0 110px;
 }
 
 .social-links {
@@ -246,7 +246,7 @@ blockquote {
 	font-weight: 400;
 	font-size: .8em;
 	color: #a3b3bf;
-	padding-left: 43px;
+	padding-left: 65px;
 	position: relative;
 }
 
@@ -269,7 +269,7 @@ blockquote {
 .paddle-overlay {
 	background: rgba(17,117,192,0.5 );
 	position: absolute;
-	width: 250px;
+	width: 280px;
 	height: 300px;
 	top: 0;
 	right: 0;
@@ -285,8 +285,11 @@ blockquote {
 .side-copy a {
 	font-family: 'Asap', 'sans-serif';
 	font-weight: 400;
-	font-size: .9em;
 	color: #a3b3bf;
+}
+
+.about-ad {
+	font-size: .9em;
 	float: right;
 	padding: 5px 40px 0 0;
 }
@@ -298,7 +301,7 @@ blockquote {
 .side-copy h5 {
 	font-family: 'Oswald', 'sans-serif';
 	font-weight: 400;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	padding: 60px 0 0 30px;
 	margin: 0;
 	color: #106db3;
@@ -348,6 +351,7 @@ hr {
 	position: absolute;
 	color: #242F48;
 	margin: 0 auto;
+	opacity: 0.9;
 	padding-top: 2px;
 	display: inline-block;
 }
@@ -369,7 +373,8 @@ hr {
 	position: relative;
 }
 
-.footer-container:hover {
+.footer-container a {
+	z-index: 2;
 }
 
 .foot-overlay {
