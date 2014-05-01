@@ -369,6 +369,9 @@ hr {
 	position: relative;
 }
 
+.footer-container:hover {
+}
+
 .foot-overlay {
 	background: rgba(17,117,192,0.7 );
 	position: absolute;
