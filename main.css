@@ -337,26 +337,35 @@ hr {
 	padding: 26px 0 26px 0;
 }
 
-.foot-imgs {
-	height: 300px;
-	width: 25%;
-	display: inline-block;
-	float: left;
+
+/* Trying something new here */
+
+.footer-container {
 	overflow: hidden;
+	width: 100;
 }
 
-.foot-text {
+.foot-image {
+	background-size: cover;
+	float: left;
 	height: 300px;
 	width: 25%;
-	position: absolute;
-	color: #242F48;
-	margin: 0 auto;
-	opacity: 0.9;
-	padding-top: 2px;
-	display: inline-block;
+	position: relative;
 }
 
-.foot-text h4 {
+.foot-image div {
+	background: rgba(17, 117, 192, 0.75);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: background-color 0.4s, color 0.4s;
+}
+
+.foot-image:hover div {
+	background: transparent;
+}
+
+.foot-image h4 {
 	font-family: 'Oswald', 'sans-serif';
 	font-weight: 400;
 	font-size: 2em;
@@ -366,34 +375,6 @@ hr {
 	position: absolute;
 	bottom: 20px;
 }
-
-.footer-container {
-	height: 300px;
-	width: 100%;
-	position: relative;
-}
-
-.footer-container a {
-	z-index: 2;
-}
-
-.foot-overlay {
-	background: rgba(17,117,192,0.7 );
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-}
-
-/*.foot-imgs a {
-	height: 300px;
-	width: 100%;
-}
-
-.foot-imgs a:hover {
-	background: white;
-}*/
 
 .footer {
 	height: 100px;
