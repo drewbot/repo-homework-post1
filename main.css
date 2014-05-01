@@ -337,9 +337,9 @@ hr {
 .foot-imgs {
 	height: 300px;
 	width: 25%;
-	background-color: #242F48;
 	display: inline-block;
 	float: left;
+	overflow: hidden;
 }
 
 .foot-text {
@@ -359,7 +359,6 @@ hr {
 	color: #242F48;
 	margin: 0;
 	padding: 10px 15px 0 15px;
-	opacity: 0.8;
 	position: absolute;
 	bottom: 20px;
 }
