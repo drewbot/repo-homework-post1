@@ -448,7 +448,7 @@ hr {
 }
 
 .footer-container a:hover {
-	color: #106db3;
+	color: white;
 }
 
 .ironyard {
@@ -456,7 +456,7 @@ hr {
 	display: inline-block;
 	width: 46px;
 	height: 35px;
-	margin: 0 8px 0 30px;
+	margin: 0 0 0 30px;
 }
 
 .copyright {
@@ -466,6 +466,7 @@ hr {
 .footer-nav {
 	float: right;
 }
+
 
 
 
