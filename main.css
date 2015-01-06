@@ -247,6 +247,10 @@ blockquote {
 	color: #FFFFFF;
 }
 
+.options a {
+	display: block;
+}
+
 
 /* Right Column */
 
